@@ -15,15 +15,15 @@
     <meta name="twitter:title" content="My Awesome Website - Home Page">
     <meta name="twitter:description" content="Welcome to my website! Learn about me, my projects, and get in touch.">
     <meta name="twitter:image" content="https://www.yourwebsite.com/images/thumbnail.jpg">
-    <meta http-equiv="refresh" content="30">
-    <meta http-equiv="default-style">
+    <meta name="robots" content="noindex, nofollow"> <!--Não Aparece em pesquisas do google-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <link rel="icon" type="image/png" href="favicon.png">
-
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 
-    <title>My Awesome Website - Home Page</title>
-    <title>About Nakay | Portfolio</title>
+    <title>MedLink</title>
 </head>
 <body>
     <nav>
@@ -39,8 +39,8 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>I'm Nakay, a passionate web developer. I create beautiful and functional websites.</p>
+                <h1>Welcome to MedLink</h1>
+                <p>Your Health, Our Priority. We are committed to providing you with the highest quality medical services.</p>
                 <a href="projects.html" class="cta-button">View Our Projects</a>
             </div>
         </section>
@@ -50,27 +50,27 @@
             <div class="about-content">
                 <img src="img/MedLink.png" alt="My Profile Picture" class="profile-image">
                 <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>I am a web developer with a focus on front-end technologies. I enjoy turning ideas into interactive web experiences. I am constantly learning and exploring new technologies.</p>
+                    <h2>About MedLink</h2>
+                    <p>MedLink is dedicated to providing exceptional medical care to our community. We believe that everyone deserves access to quality healthcare, and we strive to make a positive impact on the lives of our patients. We are constantly learning and exploring new technologies to give you the best care.</p>
                 </div>
             </div>
         </section>
 
         <!-- Featured Projects -->
         <section class="featured-projects">
-            <h2>Featured Projects</h2>
+            <h2>Our Services</h2>
             <div class="projects-grid">
                 <article class="project-card">
                     <img src="img/Pikartil.png" alt="Project 1" class="project-image">
-                    <h3>Project 1</h3>
-                    <p>Description of project 1.</p>
+                    <h3>Pikartil</h3>
+                    <p>Description of Pikartil service.</p>
                     <a href="services.html" class="cta-button">Learn More</a>
                 </article>
 
                 <article class="project-card">
                     <img src="img/ProMed.png" alt="Project 2" class="project-image">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2.</p>
+                    <h3>ProMed</h3>
+                    <p>Description of ProMed service.</p>
                     <a href="services.html" class="cta-button">Learn More</a>
                 </article>
             </div>
@@ -78,15 +78,15 @@
 
         <!-- Call to Action -->
         <section class="cta">
-            <h2>Ready to collaborate?</h2>
-            <p>Let's build something amazing together.</p>
-            <a href="contact.html" class="cta-button">Contact Me</a>
+            <h2>Need Assistance?</h2>
+            <p>Contact us today, we are ready to help.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
         </section>
     </main>
 
     <article>
         <header class="article-header">
-            <h1>Article Title</h1>
+            <h1>Understanding Your Medical Results</h1>
             <p class="article-meta">
                 Published on: <time datetime="2025-02-28">February 28, 2025</time> | By: Nakay
             </p>
@@ -95,11 +95,11 @@
         <div class="article-content">
             <img src="img/Healthcare.jpg" alt="Article Image" class="article-featured-image">
 
-            <h2>Section 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+            <h2>Introduction</h2>
+            <p>It is important to understand the medical results in order to take care of yourself correctly. There are many test that you can do and we are here to explain you what they mean. </p>
 
-            <h3>Subsection</h3>
-            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. </p>
+            <h3>Section : Blood Tests</h3>
+            <p>Blood tests are a common diagnostic tool used to assess various aspects of a person's health. These tests provide valuable information about the body's internal functions, helping healthcare professionals detect, monitor, and manage a wide range of medical conditions. </p>
              <ul>
                 <li> this is a list </li>
                 <li> this is an other element of the list</li>
