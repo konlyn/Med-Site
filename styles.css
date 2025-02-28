@@ -1,0 +1,390 @@
+/* CSS Reset (or Normalization) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F9FBFD;
+    color: #333;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Add this new style */
+body.fade-out {
+    opacity: 0;
+}
+
+/* container */
+.container{
+    width: 80%; 
+    margin: auto; 
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: #38B0F2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Basic styling for the navigation */
+nav {
+    background-color: #6DC3F1;
+    color: #F9FBFD;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #F9FBFD;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #b3d7ee;
+}
+
+/* Main */
+main {
+    padding: 1rem;
+}
+
+/* General Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #464747;
+    color: #F9FBFD;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('img/hero-medical.jpg'); /* Replace with your medical image */
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Dark Gray text */
+    text-align: center;
+    padding: 10rem 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 176, 242, 0.2); /*  more translucent overlay with 10% opacity */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1,
+.hero p {
+    color: #fff; /* white text */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1{
+   font-size: 3rem;
+}
+
+/* About Me */
+.about {
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-image {
+    max-width: 300px;
+    border-radius: 50%;
+}
+.about-text{
+    flex: 1;
+}
+
+/* Featured Projects */
+.featured-projects {
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #8B8F91;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Call to Action */
+.cta {
+    background-color: #6DC3F1; /* darker background */
+    color: #F9FBFD;
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Call to Action Button */
+.cta-button {
+    background-color: #38B0F2;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #69a4c9;
+    text-decoration: none;
+}
+
+/* Article Styles */
+article {
+    background-color: #fff;
+    border: 1px solid #8B8F91;
+    margin-bottom: 2rem; /* added margin */
+    padding: 2rem; /* added padding */
+    max-width: 800px; /* limit the width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.article-header h1 {
+    font-size: 3rem; /* larger title */
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.article-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.article-featured-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.article-content {
+    line-height: 1.8; /* Better readability for article text */
+}
+
+.article-content p {
+    margin-bottom: 1.5rem; /* more space between paragraphs */
+    color: #444;
+}
+
+.article-content h2 {
+    margin: 2rem 0 1rem 0;
+    border-bottom: 1px solid #8B8F91; /* Subtle divider */
+    padding-bottom: 0.5rem;
+    color: #333;
+}
+
+.article-content h3 {
+    margin: 1rem 0;
+    color: #333;
+}
+
+.article-content img{
+    max-width: 100%;
+    margin: 2rem 0;
+    border-radius: 5px; /* optional rounded corners */
+}
+.article-content ul, .article-content ol{ /* style for the list */
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+.article-content blockquote{
+    background-color: #F9FBFD;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 5px solid #6DC3F1;
+}
+
+/* section */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* General Adjustments for Smaller Screens */
+    .container {
+        width: 95%; /* wider container */
+    }
+      h1 {
+        font-size: 2rem; /* Smaller heading */
+    }
+    h2 {
+        font-size: 1.7rem; /* Smaller heading */
+    }
+    h3 {
+        font-size: 1.4rem; /* Smaller heading */
+    }
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column; /* Vertical menu */
+        align-items: center; /* Center items */
+    }
+
+    nav li {
+        margin-bottom: 0.5rem; /* Space out the menu items */
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 5rem 1rem; /* Smaller padding */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    /* About Me */
+    .about-content {
+        flex-direction: column; /* Stack the content */
+        text-align: center; /* center the text */
+    }
+
+    .profile-image {
+        max-width: 200px; /* Smaller image */
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust min width */
+    }
+     /* Article */
+    article {
+        padding: 1rem; /* Less padding on smaller screens */
+    }
+
+    .article-header h1 {
+        font-size: 2rem; /* smaller article title */
+    }
+    /* footer */
+     footer{
+         font-size: 0.8rem;
+     }
+}
+
+/* Contact page */
+.contact{
+    padding: 2rem;
+}
+.contact-form .form-group{
+    margin-bottom: 1rem;
+}
+.contact-form label {
+    display: block; /* Make labels stack above inputs */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Add space below the label */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #8B8F91;
+    border-radius: 5px;
+    margin-bottom: 0.5rem; /* Add some space below the input */
+}
+
